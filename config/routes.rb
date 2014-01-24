@@ -2,7 +2,7 @@ RitlyApp::Application.routes.draw do
 
 resources :urls
 
-root to: "urls#index"
+root to: "urls#search"
 
 
 #   Prefix Verb   URI Pattern              Controller#Action
