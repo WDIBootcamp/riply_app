@@ -7125,19 +7125,13 @@ body {
   background-color: #eee;
 }
 
-.form-signin {
+.form-search {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
-.form-signin .label_tag,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
+
+.form-search .form-control {
   position: relative;
   font-size: 16px;
   height: auto;
@@ -7146,17 +7140,26 @@ body {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.form-signin .form-control:focus {
+.form-search .form-control:focus {
   z-index: 2;
 }
-.form-signin input[type="text"] {
+.form-search a[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.form-signin input[type="password"] {
+.form-search input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.form-control {
+  height: 3em;
+}
+
+.btn .btn-lg .btn-primary {
+  height: 3em;
+  padding: 0;
 }
 

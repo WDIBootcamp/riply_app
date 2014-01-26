@@ -1,0 +1,29 @@
+/*----------------------------------------------_FORM_SEARCH.HTML.ERB*/
+
+.webpage-name	{
+	text-align: center;
+	font-size: 10em;
+}
+
+.search-elements{
+	width: 100%;
+}
+
+.input-group-addon	{
+	display: inline;
+}
+
+
+
+/*----------------------------------------------SHOW.HTML.ERB*/
+.input-group	{
+	width: 50%;
+}
+
+.message	{
+	text-align: center
+}
+
+.message-link	{
+	display: inline;
+}

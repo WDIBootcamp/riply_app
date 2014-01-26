@@ -1,8 +1,13 @@
 RitlyApp::Application.routes.draw do
 
+
+get "/go/:id", to: "urls#link", as: :go
+put "/urls/:id", to: "urls#update", as: :update_url
+
 resources :urls
 
 root to: "urls#search"
+
 
 
 #   Prefix Verb   URI Pattern              Controller#Action

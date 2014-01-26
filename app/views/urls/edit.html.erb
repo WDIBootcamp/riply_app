@@ -3,13 +3,15 @@
 <div class="container message">
 	done! </br>
 	Here is your new url: </br>
+	You can customize the link --- </br>
 
 </div>
 
-
 <div class="container input-group">
-  <span class="input-group-addon">localhost:3000/go/</span>
-  <input type="text" id="custom_str" class="form-control" placeholder='<%= @url["random_string"] %>'>
+	<%= form_for :url, url: update_url_path(@url.random_string), :method =>"put" do |u| %>
+	<span class="input-group-addon">localhost:3000/go/</span>
+	<%= u.text_field :random_string %>
+	<% end %>
 
 </div>
 
@@ -18,3 +20,6 @@
 <a href="/go/<%= @url["random_string"] %>"> Go to it! </a>
 
 </div>
+
+
+<%= render @urls %>

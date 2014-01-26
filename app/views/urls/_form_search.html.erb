@@ -1,0 +1,18 @@
+<div class="webpage-name"> abry </div>
+
+<div class="container search">
+
+<%= form_for :url, url: urls_path, class: "form-search" do |f| %>
+<div class="container search-elements">
+<%= f.text_field :link, class: "form-control", placeholder: "Paste in a link" %>
+  <%= f.submit "Shorten", class: "btn btn-lg btn-primary"%>
+</div>
+<% end %>
+
+
+
+ </div> <!-- /container -->
+
+
+
+
