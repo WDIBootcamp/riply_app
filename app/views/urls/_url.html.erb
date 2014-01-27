@@ -8,8 +8,8 @@
 <div class="display-box">
     <div class="row display-row">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 display-info">
-            <div><%= url.link.split("/")[2].split(".", 2)[1]%></div> 
-            <div><%= url.clicks %> clicks</div>
+            <div><%= url.link.split("/")[2]%></div> 
+            <div class="click-display"><%= url.clicks %> clicks</div>
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
             </br>
@@ -17,5 +17,8 @@
             <div class="display-link">localhost:3000/go/<%= url.random_string %></div> 
             </a>
         </div> 
+<!--         <iframe src="<%= url.link %>">
+            <p>Placeholder text; only shows up if the page DOESN'T render!</p>
+        </iframe> -->
     </div> 
 </div>

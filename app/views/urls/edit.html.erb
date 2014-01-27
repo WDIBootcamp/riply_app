@@ -4,8 +4,8 @@
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 	<div class="form-edit-info">
 		<div class="row">
-			<%= form_for :url, url: update_url_path(@url.random_string), :method =>"put", :class => "edit-form" do |u| %>
-			<div class="cols col-xs-2 col-sm-2 col-md-4 col-lg-4">
+			<%= form_for :url, url: update_url_path(@url.id), :method =>"put", :class => "edit-form" do |u| %>
+			<div class="cols col-xs-1 col-sm-1 col-md-2 col-lg-2">
 				<span class="str-alert">It's tiny!</span>
 			</div> 
 			<div class="cols cols-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -16,13 +16,14 @@
 				<div class"row">
 					<div class="customize">customize</div>
 				</div>
+			</div>		
+			<div class="cols cols-group col-xs-1 col-sm-1 col-md-2 col-lg-2">
+					<div class="goto">
+							<a class= "goto-chevron" href="/go/<%= @url["random_string"]%>"> Go to it! <span class="glyphicon glyphicon-chevron-right"></span> </a>
+					</div>
 			</div>
 		</div>
 		<% end %>
-	</div>
-
-	<div class="goto">
-		<a href="/go/<%= @url["random_string"] %>"> Go to it! </a>
 	</div>
 
 </div>

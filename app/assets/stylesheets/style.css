@@ -1,3 +1,22 @@
+/*----------------------------------------------ALL*/
+
+body	{
+	font-family: Helvetica, sans-serif;
+	color: rgba(0, 0, 0, .6);
+}
+
+
+ .form-control:focus {
+  border-color: #009b95;
+  outline: 0;
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 226, 0, 6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 226, 0, 0.6);*/
+  }
+
+  span	{
+  	color: #009b95;
+  }
+
 /*----------------------------------------------_FORM_SEARCH.HTML.ERB*/
 
 .webpage-name	{
@@ -36,8 +55,8 @@
 }
 
 .btn:hover	{
-	background-color: #ffe200;
-	color: #9040D5;
+	background-color: #006B53;
+	color: #white;
 }
 
 /*----------------------------------------------EDIT.HTML.ERB*/
@@ -45,7 +64,7 @@
 
 .alert	{
 	margin-top: 20px;
-	max-width: 42%;
+	width: 500px;
 }
 
 .str-alert	{
@@ -54,11 +73,11 @@
 
 .goto	{
 	display: inline;
-	text-align: center;
 }
 
 .customize	{
 	display: inline;
+	color: #009b95;
 }
 
 .row-text-field	{
@@ -68,17 +87,34 @@
 .cols	{
 	max-width: 140px;
 	min-width: 140px;
+	display: inline;
 }
 
 .customizable-str	{
 	height: 30px;
 	margin-top: -3px;
+	width: 141px;
 }
 
 .cols-group {
 	margin-top: 11px;
 }
 
+.input-group-addon	{
+	background: #ffe200;
+}
+
+.glyphicon	{
+	display: inline;
+}
+
+input["url_random_string"]	{
+	display:inline;
+}
+
+.goto-chevron	{
+	color: #009b95;
+}
 
 /*----------------------------------------------Admin.HTML.ERB*/
 
@@ -95,12 +131,12 @@
 .display-link	{
 	text-align: right;
 	text-decoration: none;
-	color: red;
+	color: #34D2AF;
 }
 
 .display-row	{
 	background: white;
-	margin: 10px;
+	margin: 13px;
 	padding: 20px;
 }
 
@@ -112,6 +148,13 @@
 	margin-left: auto;
 }
 
+.image-icon	{
+	background-image: url('gnome.png');
+}
+
+.click-display	{
+	width: 100px;
+}
 
 @media(max-width: @screen-xs-max) {
 

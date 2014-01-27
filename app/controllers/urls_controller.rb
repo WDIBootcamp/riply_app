@@ -34,11 +34,21 @@ class UrlsController < ApplicationController
 	end
 
 	def update
-		random_string = params[:id]
+		id = params[:id]
 		updated_info = params.require(:url).permit(:link, :random_string, :clicks)
-		url = Url.find_by_random_string(random_string)
-		url.update_attributes(updated_info)
-		redirect_to edit_url_path(url.id)
+		@url = Url.find(id)
+
+		# if  not Url.where(random_string: @url.random_string).empty?
+		# 	@urls = Url.all
+		# 	render :alert
+		# 	return
+		# elsif Url.where(random_string: @url.random_string).empty?
+		# 	@url.update_attributes(updated_info)
+		# 	redirect_to edit_url_path(@url.id)
+		# end
+
+		@url.update_attributes(updated_info)
+		redirect_to edit_url_path(@url.id)
 
 	end
 
