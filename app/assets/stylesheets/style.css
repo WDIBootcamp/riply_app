@@ -3,17 +3,42 @@
 .webpage-name	{
 	text-align: center;
 	font-size: 10em;
+	font-family: 'Medula One', cursive;
+	color: #009b95;
+}
+
+.search 	{
+	text-align: center;
 }
 
 .search-elements{
 	width: 100%;
+	text-align: center;
 }
 
 .input-group-addon	{
 	display: inline;
 }
 
+.form-control	{
+	width: 450px;
+	display: inline;
+}
 
+.navbar	{
+	background-color: #ffe200;
+	margin-top: -75px;
+}
+
+.btn	{
+	background-color: #009b95;
+	border: 0;
+}
+
+.btn:hover	{
+	background-color: #ffe200;
+	color: #9040D5;
+}
 
 /*----------------------------------------------SHOW.HTML.ERB*/
 .input-group	{
@@ -27,3 +52,59 @@
 .message-link	{
 	display: inline;
 }
+
+
+/*----------------------------------------------Admin.HTML.ERB*/
+
+.column-link	{
+	max-width: 100px;
+}
+
+/*----------------------------------------------_URL.HTML.ERB*/
+
+.display-con	{
+	padding-top: 50px;
+}
+
+.display-link	{
+	text-align: right;
+	text-decoration: none;
+	color: red;
+}
+
+.display-row	{
+	background: white;
+	margin: 10px;
+	padding: 20px;
+}
+
+.display-box 	{
+	width: 450px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+@media(max-width: @screen-xs-max) {
+
+	.display-box {
+		width: 300px;
+	}
+
+
+
+}
+
+
+
+/*make a media query for when the screen is iphone size*/
+
+
+
+
+
+
+
+

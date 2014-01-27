@@ -1,3 +1,6 @@
 <%= render  partial: "form_search" %>
 
-<%= render @urls %>
+<!-- display all of the current urls -->
+<div class="container display-con">
+	<%= render @urls.reverse %>
+</div>

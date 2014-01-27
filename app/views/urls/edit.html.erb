@@ -1,5 +1,12 @@
 <%= render  partial: "form_search" %>
 
+
+<div class="alert alert-warning alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+</div>
+
+
 <div class="container message">
 	done! </br>
 	Here is your new url: </br>
@@ -17,9 +24,11 @@
 
 
 <div class="container message">
-<a href="/go/<%= @url["random_string"] %>"> Go to it! </a>
+	<a href="/go/<%= @url["random_string"] %>"> Go to it! </a>
 
 </div>
 
-
-<%= render @urls %>
+<!-- display all of the current urls -->
+<div class="container display-con">
+	<%= render @urls.reverse %>
+</div>

@@ -3,6 +3,7 @@ RitlyApp::Application.routes.draw do
 
 get "/go/:id", to: "urls#link", as: :go
 put "/urls/:id", to: "urls#update", as: :update_url
+get "/admin/", to: "urls#admin", as: :admin
 
 resources :urls
 
