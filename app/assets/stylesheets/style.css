@@ -40,17 +40,43 @@
 	color: #9040D5;
 }
 
-/*----------------------------------------------SHOW.HTML.ERB*/
-.input-group	{
-	width: 50%;
+/*----------------------------------------------EDIT.HTML.ERB*/
+
+
+.alert	{
+	margin-top: 20px;
+	max-width: 42%;
 }
 
-.message	{
-	text-align: center
+.str-alert	{
+	font-size: 2em;
 }
 
-.message-link	{
+.goto	{
 	display: inline;
+	text-align: center;
+}
+
+.customize	{
+	display: inline;
+}
+
+.row-text-field	{
+	display: inline;
+}
+
+.cols	{
+	max-width: 140px;
+	min-width: 140px;
+}
+
+.customizable-str	{
+	height: 30px;
+	margin-top: -3px;
+}
+
+.cols-group {
+	margin-top: 11px;
 }
 
 

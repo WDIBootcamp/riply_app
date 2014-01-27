@@ -1,32 +1,32 @@
 <%= render  partial: "form_search" %>
 
-
-<div class="alert alert-warning alert-dismissable">
+<div class="container alert alert-warning alert-dismissable">
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+	<div class="form-edit-info">
+		<div class="row">
+			<%= form_for :url, url: update_url_path(@url.random_string), :method =>"put", :class => "edit-form" do |u| %>
+			<div class="cols col-xs-2 col-sm-2 col-md-4 col-lg-4">
+				<span class="str-alert">It's tiny!</span>
+			</div> 
+			<div class="cols cols-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<span class="input-group-addon">localhost:3000/go/</span>
+			</div>
+			<div class="cols cols-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<%= u.text_field :random_string, :class => "customizable-str" %>
+				<div class"row">
+					<div class="customize">customize</div>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+
+	<div class="goto">
+		<a href="/go/<%= @url["random_string"] %>"> Go to it! </a>
+	</div>
+
 </div>
 
-
-<div class="container message">
-	done! </br>
-	Here is your new url: </br>
-	You can customize the link --- </br>
-
-</div>
-
-<div class="container input-group">
-	<%= form_for :url, url: update_url_path(@url.random_string), :method =>"put" do |u| %>
-	<span class="input-group-addon">localhost:3000/go/</span>
-	<%= u.text_field :random_string %>
-	<% end %>
-
-</div>
-
-
-<div class="container message">
-	<a href="/go/<%= @url["random_string"] %>"> Go to it! </a>
-
-</div>
 
 <!-- display all of the current urls -->
 <div class="container display-con">
