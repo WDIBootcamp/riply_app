@@ -1,0 +1,8 @@
+<% if signed_in? %>
+
+	<div class="row">
+      <div class="container profile"><%= current_user().name %></div>
+      <div class="container profile"><%= current_user().email %></div>
+	</div>
+
+<% end %>

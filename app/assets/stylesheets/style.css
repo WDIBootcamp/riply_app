@@ -210,6 +210,12 @@ input["url_random_string"]	{
 	color: #009b95;
 }
 
+
+.sign-up-now a	{
+	text-align: center;
+	color: #34D2AF;
+}
+
 .sign-up-now	{
 	text-align: center;
 }
