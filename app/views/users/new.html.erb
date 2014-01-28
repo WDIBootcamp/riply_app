@@ -5,15 +5,15 @@
       </h2>
 
       <% unless @user.errors.count == 0   %>
-        <div class="alert alert-error">
+        <div class="container alert alert-danger">
           The form contains <%= pluralize(@user.errors.count, "error") %>.
-        </div>
         <% @user.errors.full_messages.each do |msg| %>
-          <div>* <%= msg %></div>
+          <div><%= msg %></div>
         <% end %>
+        </div>
       <% end %>
 
-        <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+        <%= f.text_field :name, class: "form-control", placeholder: "Name", autofocus: true %>
         <%= f.text_field :email, class: "form-control", placeholder: "Email" %> 
         <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
         <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm Password" %>
