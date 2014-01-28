@@ -1,13 +1,16 @@
 RitlyApp::Application.routes.draw do
 
+resources :urls, :users, :sessions
+root to: "urls#search", as: :home_root
+
+get '/signup' => 'users#new'
+delete '/signout', to: 'sessions#destroy'
+get'/signin' => 'sessions#new'
 
 get "/go/:id", to: "urls#link", as: :go
 put "/urls/:id", to: "urls#update", as: :update_url
-get "/admin/", to: "urls#admin", as: :admin
+get "/admin", to: "urls#admin", as: :admin
 
-resources :urls
-
-root to: "urls#search"
 
 
 
