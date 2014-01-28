@@ -16,8 +16,9 @@ body	{
   span	{
   	color: #009b95;
   }
-
-/*----------------------------------------------_FORM_SEARCH.HTML.ERB*/
+/*----------------------------------------------URLS-----------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------------------_FORM_SEARCH.HTML.ERB*/
 
 .webpage-name	{
 	text-align: center;
@@ -42,11 +43,6 @@ body	{
 .form-control	{
 	width: 450px;
 	display: inline;
-}
-
-.navbar	{
-	background-color: #ffe200;
-	margin-top: -75px;
 }
 
 .btn	{
@@ -166,14 +162,57 @@ input["url_random_string"]	{
 
 }
 
-
-
 /*make a media query for when the screen is iphone size*/
 
 
+/*----------------------------------------------USERS----------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------------------------------_URL.HTML.ERB*/
 
+.navbar	{
+	background-color: #ffe200;
+	margin-top: -65px;
+}
 
+.navbar-options	{
+	display: inline;
+}
 
+.navbar-options a	{
+	color: #555555;
+	padding: 20px;
+	background-size: 100px;
+}
+
+.navbar-options a:hover	{
+	background: #eee;
+	text-decoration: none;
+	color: #009b95;
+	font-variant: bold;
+
+}
+
+.con-navbar-options	{
+	padding-top: 25px;
+	text-align: right;
+	margin-right: -15px;
+}
+
+/*----------------------------------------------NEW.HTML.ERB*/
+
+#user_name, #user_email, #user_password, #user_password_confirmation, 
+#session_email, #session_name, #session_password {
+	width: 100%;
+}
+
+.form-sigin-heading	{
+	text-align: center;
+	color: #009b95;
+}
+
+.sign-up-now	{
+	text-align: center;
+}
 
 
 

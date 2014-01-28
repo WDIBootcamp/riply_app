@@ -7125,26 +7125,41 @@ body {
   background-color: #eee;
 }
 
-.form-search {
+.btn .btn-lg .btn-primary {
+  height: 3em;
+  padding: 0;
+}
+
+.form-signin {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
-
-.form-search .form-control {
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.form-search .form-control:focus {
+.form-signin .form-control:focus {
   z-index: 2;
 }
-.form-search a[type="text"] {
+.form-signin input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.form-search input[type="password"] {
+.form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -7154,8 +7169,5 @@ body {
   height: 3em;
 }
 
-.btn .btn-lg .btn-primary {
-  height: 3em;
-  padding: 0;
-}
+
 

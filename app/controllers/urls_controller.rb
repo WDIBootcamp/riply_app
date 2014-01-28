@@ -72,6 +72,7 @@ class UrlsController < ApplicationController
 
 	def admin
 		@urls = Url.all
+		@users = User.all
 	end
 
 	def destroy
